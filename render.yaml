@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-business-assistant-rag
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: APP_NAME
+        value: AI Business Assistant RAG
